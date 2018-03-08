@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+        <div class="container"> <span>Basic Calculator JS</span></div>
+
+         <div class="calcbody">
+            <form name="calculator">
+                <input name = "display" placeholder="0" id="one"/>
+                <br>
+                
+                <input type="button" value="7" onclick="document.calculator.display.value +='7'">
+                <input type="button" value="8" onclick="document.calculator.display.value +='8'">
+                <input type="button" value="9" onclick="document.calculator.display.value +='9'">
+                <input type="button" value="+" onclick="btnadd()">
+            
+                <br>
+                <input type="button"  value="4"onclick="document.calculator.display.value +='4'">
+                <input type="button"  value="5" onclick="document.calculator.display.value +='5'">
+                <input type="button"  value="6" onclick="document.calculator.display.value +='6'">
+                <input type="button"  value="-" onclick="btnsub()">
+                <br>
+                <input type="button"  value="1" onclick="document.calculator.display.value +='1'">
+                <input type="button"  value="2" onclick="document.calculator.display.value +='2'">
+                <input type="button"  value="3" onclick="document.calculator.display.value +='3'">
+                <input type="button"  value="*" onclick="btnmult()">
+                <br> 
+                <input type="button" value="0" onclick="document.calculator.display.value +='0'">
+                <input type="button" value="%"  onclick="btnmod()">
+                <input type="button" value="."  onclick="btndot()">
+                <input type="button" value="/" onclick="btndiv()">
+                <br>
+                <input type="button" value="="  onclick="document.calculator.display.value = eval(document.calculator.display.value)" id="two">
+                <input type="button" value="AC" onclick="btnallclear()">
+                
+            </div>
+
+            </form>
+            
+    
+    <script src="calculator.js"></script>
+    
+</body>
+</html>
